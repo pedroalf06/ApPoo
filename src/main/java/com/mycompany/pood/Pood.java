@@ -4,48 +4,15 @@
 
 package com.mycompany.pood;
 import java.util.Scanner;
+import com.mycompany.pood.persona;
 
-/**
- *
- * @author Usuario
- */
+
 public class Pood {
     
     Scanner in = new Scanner (System.in);
     
-    
-    
-    private  String nombre ="";
-    private int edad = 0;
-    
-    public void setnombre(){
-       
-       System.out.println("Ingrese nombre: ");
-        nombre = in.nextLine(); 
-    }
-    
-       public void setedad(){
-       
-       System.out.println("Ingrese edad: ");
-        edad = in.nextInt(); 
-        in.nextLine();
-    }
-   
-    public String getnombre (){
-        
-        return(nombre);
-        
-    }
-       
-    
-     public int getedad (){
-        
-        return(edad);
-        
-    }
-
-    public static void main(String[] args) {
-        Pood p1 = new Pood();
+          public static void main(String[] args) {
+        persona p1 = new persona();
         
         p1.setnombre();
         p1.setedad();
